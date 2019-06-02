@@ -1,10 +1,10 @@
 import React from 'react';
 
 import './style.scss';
-import Helmet from './helmet';
-import Header from './header';
+import Helmet from './Helmet';
+import Header from './Header';
 import Midsection from './midsection';
-import Footer from './footer';
+import Footer from './Footer';
 
 const Layout = ({ children }) => (
 	<div>
