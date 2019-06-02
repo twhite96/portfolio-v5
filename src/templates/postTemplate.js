@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from '../components/helmet'
+import Helmet from '../components/Helmet'
 import Header from '../components/blog-header'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 export default function Template({
 	data // this prop will be injected by the GraphQL query below.

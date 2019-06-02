@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.scss'
-import Helmet from './helmet'
+import Helmet from './Helmet'
 import BlogHeader from './blog-header'
-import Footer from './footer'
+import Footer from './Footer'
 import Blogs from './blogs'
 
 const BlogLayout = ({ posts }) => (
