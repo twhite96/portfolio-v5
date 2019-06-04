@@ -5,6 +5,7 @@
 	"author": "Aman Mittal <amandeepmittal@live.com>",
 	"dependencies": {
 		"bulma": "^0.7.5",
+		"bulma-extensions": "^6.2.7",
 		"bulma-timeline": "^3.0.4",
 		"gatsby": "^2.8.2",
 		"gatsby-image": "^2.1.2",
