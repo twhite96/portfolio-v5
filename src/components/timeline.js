@@ -1,10 +1,20 @@
 import React from 'react'
 import dev from '../images/dev.jpg'
 import pitt from '../images/pitt.png'
+import icf from '../images/icf.jpg'
 
 const timeline = () => (
   <>
     <div className="timeline is-centered">
+      <div className="timeline-item is-warning">
+        <div className="timeline-marker is-warning is-image is-48x48">
+          <img src={icf} alt="ICF" />
+        </div>
+        <div className="timeline-content">
+          <p className="heading">July 2019 -current</p>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
       <div className="timeline-item is-warning">
         <div className="timeline-marker is-warning is-image is-48x48">
           <img src={dev} alt="DEV" />
