@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Tiffany White | Frontend Developer',
+    title: 'Tiffany R. White | Frontend Developer',
     author: 'Tiffany White',
     description: 'Portfolio Website',
     keywords: `Portfolio website for Tiffany White, a frontend developer based in Pennsylvania, US.`,
