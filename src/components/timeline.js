@@ -38,7 +38,7 @@ const timeline = () => (
         <span className="tag is-large is-danger">
           <a
             className="has-text-white"
-            href="https://www.dropbox.com/s/aui84odhkwd11hk/Tiffany%20White%20-%20Resume.pdf?dl=0"
+            href="https://drive.google.com/file/d/180XAMKzLXvOmXbS2rAZXgDflE3aLrZ0K/view?usp=sharing"
           >
             VIEW MY RESUME
           </a>

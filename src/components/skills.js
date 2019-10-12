@@ -14,7 +14,7 @@ const skills = () => {
 								<p className="title">Front End</p>
 								<div className="tags are-medium">
 									<span className="tag is-danger">HTML</span>
-									<span className="tag is-danger">CSS</span>
+									{/* <span className="tag is-danger">CSS</span> */}
 									<span className="tag is-danger">Javascript</span>
 									<span className="tag is-danger">jQuery</span>
 									<span className="tag is-danger">React</span>
@@ -30,7 +30,7 @@ const skills = () => {
 									<span className="tag is-danger">Node/Express</span>
 									<span className="tag is-danger">Ruby/Ruby on Rails</span>
 									<span className="tag is-danger">MongoDB</span>
-									<span className="tag is-danger">GraphQL</span>
+									{/* <span className="tag is-danger">GraphQL</span> */}
 								</div>
 							</article>
 						</div>
@@ -42,7 +42,7 @@ const skills = () => {
 							<p className="title">Other</p>
 							<div className="tags are-medium">
 								<span className="tag is-danger">Git</span>
-								<span className="tag is-danger">Docker</span>
+								{/* <span className="tag is-danger">Docker</span> */}
 							</div>
 						</div>
 					</article>

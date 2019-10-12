@@ -20,7 +20,7 @@ const Navbar = () => (
                 className="button is-danger is-inverted is-white"
                 href="mailto:tiffany@tiffanyrwhite.com"
               >
-                <span className="icon">👋</span>
+                <span className="icon">👋🏾</span>
                 <span>Say Hello</span>
               </a>
             </span>
