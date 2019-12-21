@@ -1,0 +1,15 @@
+- name: CSS
+  percentage: 70
+  color: danger
+
+- name: JavaScript
+  percentage: 90
+  color: warning
+
+- name: React.js
+  percentage: 60
+  color: react
+
+# - name:
+#   percentage: 60
+#   color: success
