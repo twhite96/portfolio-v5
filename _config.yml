@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Tiffany.
 description         : >-                               # >- means to ignore newlines until "url:"
-                      "I Create Functional, Fast, and Intuitive Web Apps."
+                      "I Create Fast, Functional, and Intuitive Web Apps."
 
 url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
 baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
