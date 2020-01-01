@@ -69,14 +69,14 @@ exclude:
   - Gemfile.lock
 
   # Jekyll PWA
-# pwa:
-#   sw_src_filepath: sw.js # Optional
-#   sw_dest_filename: sw.js # Optional
-#   dest_js_directory: assets/js # Required
-#   precache_recent_posts_num: 5 # Optional
-#   precache_glob_directory: / # Optional
-#   precache_glob_patterns: # Optional
-#     - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
-#     - index.html
-#   precache_glob_ignores: # Optional
-#     - "fonts/**/*"
+pwa:
+  sw_src_filepath: sw.js # Optional
+  sw_dest_filename: sw.js # Optional
+  dest_js_directory: assets/js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+  precache_glob_ignores: # Optional
+    - "fonts/**/*"
