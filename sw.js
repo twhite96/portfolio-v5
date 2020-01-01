@@ -15,13 +15,13 @@ Copyright 2015, 2019 Google Inc. All Rights Reserved.
 // previously cached resources to be updated from the network.
 const OFFLINE_VERSION = 2.5;
 const CACHE_NAME = 'offline';
-const ASSETS = [
-  '/assets/css/offline.css',
-  '/assets/js/cats.js',
-  '/assets/images/tiffb.png'
-];
+// const ASSETS = [
+//   '/assets/css/offline.css',
+//   '/assets/js/cats.js',
+//   '/assets/images/tiffb.png'
+// ];
 // Customize this with a different URL if needed.
-const OFFLINE_URL = 'offline.html';
+// const OFFLINE_URL = 'offline.html';
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {

@@ -59,6 +59,7 @@ plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-pwa-plugin
+  - jekyll-paginate
 
 ### Exclude from processing ###
 exclude:
