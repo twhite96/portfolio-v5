@@ -1,7 +1,7 @@
 - name: API Design with the JS Stack
-  percentage: 70
+  percentage: 50
   color: success
 
 - name: Consuming RESTful APIs
-  percentage: 90
+  percentage: 70
   color: info
