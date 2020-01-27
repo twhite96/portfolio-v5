@@ -11,7 +11,7 @@ repository          : twhite96/portfolio   # repository metadata on GitHub Pages
 ### Author Info ###
 author:
   name              : Tiffany
-  image             : https://res.cloudinary.com/twhiteblog/image/upload/v1573960505/authorimage_cxgyau.jpg
+  image             : https://res.cloudinary.com/twhiteblog/image/upload/c_scale,q_100,w_458/v1573960505/authorimage_cxgyau.jpg
   # behance           : your_username
 # dribbble          : your_username
   email             : tiffany@tiffanyrwhite.com
