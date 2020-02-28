@@ -7,7 +7,9 @@ weight: 3
 
 # **About Me**
 
-Hi 👋🏾! I'm **{{ site.author.name }}**, a front-end dev at ICF working remotely in my comfy little apartment in Swatara Twp, PA. I have been programming as an autodidact and university student for three years. I attended the University of Pittsburgh for two years after a stint in a few junior colleges.
+Hi 👋🏾! I'm **{{ site.author.name }}**, a front-end dev formerly at **[REDACTED]** working remotely in my comfy little apartment in Swatara Twp, PA. I have been programming as an autodidact and university student for three years. I attended the University of Pittsburgh for two years after a stint in a few junior colleges.
+
+I'm currently looking for work so if you have a remote position for a junior/mid-level dev please reach out!
 
 My toolbox contains JavaScript, React, some Rails, and Styled Components 💅.
 
