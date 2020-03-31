@@ -1,5 +1,5 @@
 - name: CSS
-  percentage: 70
+  percentage: 60
   color: danger
 
 - name: JavaScript
@@ -7,7 +7,7 @@
   color: warning
 
 - name: React.js
-  percentage: 60
+  percentage: 55
   color: react
 
 # - name:
