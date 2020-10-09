@@ -37,7 +37,7 @@ function App() {
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
     <BreakpointProvider>
-      <Breakpoint medium up>       
+      <Breakpoint large>       
         <Nav />
       </Breakpoint>
       <Breakpoint medium down>
