@@ -1,7 +1,0 @@
-- name: Node APIs
-  percentage: 50
-  color: success
-
-- name: Consuming RESTful APIs
-  percentage: 70
-  color: info
