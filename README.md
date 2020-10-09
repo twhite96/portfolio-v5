@@ -3,9 +3,9 @@
     <img src="https://res.cloudinary.com/twhiteblog/image/upload/v1591417115/portfolio-github.png" alt="Tiffany White portfolio" />
   </a>
 </div>
-<h1 align="center">www.tiffanyrwhite.com - v6</h1>
+<h1 align="center">www.tiffanyrwhite.com - v5</h1>
 <p align="center">
-  The sixth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank">tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The fifth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank">tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   Previous versions:
@@ -32,21 +32,74 @@ How to use:
 ---
 
 ## Motivation for this app
-fac
+My old portfolio was a Jekyll site that was plain and not appealing. It had little personality and along with a timeline and dubious "skill level bars" I wanted something *different*, something with personality that I could call my own. The Jekyll site was a template hardly modified at all, and as I JavaScript dev, I wanted my site to be written in JavaScript, with most like React and a scaffold of a Gatsby theme.
 
 ## 🥞 Stack
-
+I used Gatsby, plain old React, Sass, and styled-components 💅.
 
 ## 👊🏽 Wins
-
+This portfolio is *heavily* inspired by [Brittany Chiang](https://brittanychiang.com/)'s brilliant portfolio. I basically took a theme from the Gatsby starter repo and edited it. It took several days, over a couple of weeks, to get the look I wanted and the modifications I wanted.
 
 ## 😐 Difficulties
+Adding the navigation was the most difficult part of the whole thing. Rendering the main navigation when the viewport was > 769px was a challenge for me.
 
+At first I tried:
+
+```js
+ if (isMobile) {
+    return <StyledBurger />
+  } else {
+    return <StyledNav />
+  }
+  ```
+
+  where `isMobile` is an effect hook that was used in the theme.
+
+  I also tried media queries:
+
+  ```js
+  const StyledBurger = styled.div`
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    &:nth-child(1) {
+      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+    &:nth-child(2) {
+      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+      opacity: ${({ open }) => open ? 0 : 1};
+    }
+    &:nth-child(3) {
+      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+    }
+  }
+  ```
+
+  This was just two solutions to the problem I tried.
+
+  I ended up searching for a way to use media queries with React navs and came across a little library called [react-socks, a React library to render components only on specific viewports](https://github.com/flexdinesh/react-socks) and was easily able to render the nav and hamburger menus only on certain viewports by simply importing the `BreakpointProvider` and `Breakpoint` components.
 
 ## 🚶‍♂️Next steps
-
+This is done for now but there are still some kinks I really need to work out with the CSS.
 
 ## ⚡ Refactor ⚡
-
+Not at the moment! This is the 5th version of this site. I'll sit on it for a little bit. 😜
 
 ###  📘 Further reading
+Blog post coming soon.
