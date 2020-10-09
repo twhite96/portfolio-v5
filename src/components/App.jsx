@@ -40,7 +40,7 @@ function App() {
       <Breakpoint medium up>       
         <Nav />
       </Breakpoint>
-      <Breakpoint small down>
+      <Breakpoint medium down>
         <Burger />
       </Breakpoint>
     </BreakpointProvider>
