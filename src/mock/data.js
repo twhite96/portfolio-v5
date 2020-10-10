@@ -40,7 +40,7 @@ export const projectsData = [
     img: 'bumped-v1.png',
     title: 'Bumped App Landing Page',
     info: 'v1 of the bumped.com landing page.',
-    info2: 'I freelanced with Bumped, a fintech startup in March. We needed to refactor the landing page using Gatsby, styled-components, and Typescript. We were on a tight deadline of two weeks and we got is shipped just shy of that. The landing page has since been refactored since I last worked on it.',
+    info2: 'I freelanced with Bumped, a fintech startup in March. We needed to refactor the landing page using Gatsby, styled-components, and Typescript. We were on a tight deadline of two weeks and we got it shipped just shy of that. The landing page has since been refactored since I last worked on it.',
     url: 'https://bumped.com',
     repo: '', // if no repo, the button will not show up
   },

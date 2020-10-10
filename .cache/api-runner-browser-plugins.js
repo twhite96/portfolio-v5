@@ -2,6 +2,9 @@ module.exports = [{
       plugin: require('../node_modules/gatsby-plugin-offline/gatsby-browser.js'),
       options: {"plugins":[]},
     },{
+      plugin: require('../node_modules/gatsby-plugin-gtag/gatsby-browser.js'),
+      options: {"plugins":[],"trackingId":"UA-64753809-1"},
+    },{
       plugin: require('../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
-      options: {"plugins":[],"name":"Gatsby Simplefolio","short_name":"Simplefolio","start_url":"/","background_color":"#fff","theme_color":"#02aab0","display":"standalone","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"4ccd13523eddd3694feac28b19d11786"},
+      options: {"plugins":[],"name":"Tiffany White Portfolio","short_name":"T.W. Portfolio","start_url":"/","background_color":"#fff","theme_color":"#02aab0","display":"standalone","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"0cac0af133a7d07297e550131fc0d456"},
     }]

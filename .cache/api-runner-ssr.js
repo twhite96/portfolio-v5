@@ -1,12 +1,15 @@
 var plugins = [{
-      plugin: require('/Volumes/Working Drive/dev/portfolio-v6/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Volumes/Working Drive/dev/portfolio-v5/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Volumes/Working Drive/dev/portfolio-v6/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Volumes/Working Drive/dev/portfolio-v5/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Volumes/Working Drive/dev/portfolio-v6/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Gatsby Simplefolio","short_name":"Simplefolio","start_url":"/","background_color":"#fff","theme_color":"#02aab0","display":"standalone","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"4ccd13523eddd3694feac28b19d11786"},
+      plugin: require('/Volumes/Working Drive/dev/portfolio-v5/node_modules/gatsby-plugin-gtag/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-64753809-1"},
+    },{
+      plugin: require('/Volumes/Working Drive/dev/portfolio-v5/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Tiffany White Portfolio","short_name":"T.W. Portfolio","start_url":"/","background_color":"#fff","theme_color":"#02aab0","display":"standalone","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"0cac0af133a7d07297e550131fc0d456"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

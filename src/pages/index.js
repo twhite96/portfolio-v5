@@ -13,9 +13,9 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="preload" as="style" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
       </Helmet>
       <App />
     </>
