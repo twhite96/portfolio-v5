@@ -11,16 +11,16 @@ export const headData = {
 export const heroData = {
   title: 'I\'m',
   name: 'Tiffany.',
-  subtitle: 'I build things for the web.',
+  subtitle: 'And JavaScript is my jam.',
   intro: 'I\'m a frontend engineer based in Swatara Twp, PA who builds creative and performant websites and has fun doing it.',
-  cta: 'See More',
+  cta: 'More',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: 'Hey. My name is Tiffany.',
-  paragraphTwo: 'I love coding in JavaScript, React, Gatsby, and am getting up and running with Next.js for fullstack JAMstack apps.',
+  paragraphOne: 'Hey! I\'m Tiffany.',
+  paragraphTwo: 'When I was 12, I got my first computer, a really old, really clunky, Comodore 128. At the time, you\'d need to know a little bit of BASIC to get anything to work, and I didn\'t find writing code particularly appealing. I created a little graphic, but mostly played games on it. Fast forward to the 21st Century, with smartphones and a maturing web. I picked up an Android phone in 2010, and quickly became enamored with tweaking it, downloading custom ROMs and flashing bootloaders until I finally went to bed. I began to see that the web was going to be THE platform, and that I needed to get in on it. So I started learning to code in 2014, getting some formal CS training from 2015-2017 at the University of Pittsburgh, until finally landing my first spot on a dev team at a multi-national consulting firm.',
   resume: '' // if no resume, the button will not show up
 };
 
@@ -31,8 +31,8 @@ export const projectsData = [
     img: 'checkyoself-v1.png',
     title: 'Check Yo Self App, v1',
     info: 'A spelling and grammar checker for your markdown blog posts.',
-    info2: 'This project started out using Create React App and Bulma for the UI. It is in v1 and will soon be refactored to a more modern stack, such as Gatsby.',
-    url: 'https://check-yoself.app',
+    info2: 'I built this app because at the time I started writing it, all the tools for checking the spelling and grammar on markdown documents got tripped up on the symbols. This is currently in v1, with the grammar checker and Firebase to be added later.',
+    url: 'https://docs.check-yoself.app/blog/2020/07/01/shipping-v1-with-or-without-grammar-checking',
     repo: 'https://github.com/twhite96/checkyoself', // if no repo, the button will not show up
   },
   {
@@ -57,8 +57,8 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
+  cta: 'Want to know more? Great!',
+  btn: 'Let\'s talk!',
   email: 'tiffany@tiffanyrwhite.com',
 };
 
