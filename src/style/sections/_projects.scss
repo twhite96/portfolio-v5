@@ -16,7 +16,7 @@
     font-weight: $font-thin;
   }
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 18rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
