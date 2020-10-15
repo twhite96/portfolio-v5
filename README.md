@@ -102,4 +102,4 @@ This is done for now but there are still some kinks I really need to work out wi
 Not at the moment! This is the 5th version of this site. I'll sit on it for a little bit. 😜
 
 ###  📘 Further reading
-Blog post coming soon.
+[Real Artists Ship: Portfolio Finished | Tiffany R. White Blog](https://tiffanywhite.dev/2020/10/12/real-artists-ship/)
