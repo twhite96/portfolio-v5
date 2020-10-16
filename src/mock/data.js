@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'I\'m',
-  name: 'Tiffany.',
+  name: 'Tiffany',
   subtitle: 'and JavaScript is my jam.',
   intro: 'I\'m a frontend engineer based in Swatara Twp, PA who builds creative and performant websites and has fun doing it.',
   cta: 'More',
