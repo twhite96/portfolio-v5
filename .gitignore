@@ -10,6 +10,8 @@ Gemfile.lock
 
 # Photoshop Documents
 *.psd
-
+node_modules
+.vscode
+.cache/
 # Log Files
 *.log

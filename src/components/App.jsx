@@ -18,7 +18,9 @@ import {
   footerData,
 } from "../mock/data";
 
-
+// setDefaultBreakpoints([
+//   { medium: 375 }
+// ]);
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
