@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
 
 const StyledList = styled.ul`
   list-style: none;
@@ -28,28 +30,30 @@ const StyledList = styled.ul`
 const MobileNav = ({ open }) => {
   return (
     <StyledList open={open}>
-      <li>
-        <a href="#hero" className="menu-text">
-          <span className="menu-numbers">01.</span> Intro &nbsp;
-        </a>
-      </li>
-      <li>
-        {" "}
-        <a href="#about" className="menu-text">
-          <span className="menu-numbers">02.</span> About &nbsp;
-        </a>
-      </li>
-      <li>
-        {" "}
-        <a href="#projects" className="menu-text">
-          <span className="menu-numbers">03.</span> Projects &nbsp;
-        </a>
-      </li>
-      <li>
-        <a href="#contact" className="menu-text">
-          <span className="menu-numbers">04.</span> Contact &nbsp;
-        </a>
-      </li>
+      <Fade>
+        <li>
+          <Link to="hero" className="menu-text" smooth duration={1000}>
+            <span className="menu-numbers">01.</span> Intro &nbsp;
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="about" className="menu-text" smooth duration={1000}>
+            <span className="menu-numbers">02.</span> About &nbsp;
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="projects" className="menu-text" smooth duration={1000}>
+            <span className="menu-numbers">03.</span> Projects &nbsp;
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" className="menu-text" smooth duration={1000}>
+            <span className="menu-numbers">04.</span> Contact &nbsp;
+          </Link>
+        </li>
+      </Fade>
     </StyledList>
   );
 };

@@ -23,6 +23,8 @@ var _queryResultStore = require("./query-result-store");
 
 var _ensureResources = _interopRequireDefault(require("./ensure-resources"));
 
+var _fastRefreshOverlay = _interopRequireDefault(require("./fast-refresh-overlay"));
+
 var _errorOverlayHandler = require("./error-overlay-handler");
 
 // TODO: Remove entire block when we make fast-refresh the default
@@ -128,6 +130,16 @@ const WrappedRoot = (0, _apiRunnerBrowser.apiRunner)(`wrapRootElement`, {
   };
 }).pop();
 
-var _default = () => /*#__PURE__*/_react.default.createElement(_queryResultStore.StaticQueryStore, null, WrappedRoot);
+const ConditionalFastRefreshOverlay = ({
+  children
+}) => {
+  if (process.env.GATSBY_HOT_LOADER === `fast-refresh`) {
+    return /*#__PURE__*/_react.default.createElement(_fastRefreshOverlay.default, null, children);
+  }
+
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children);
+};
+
+var _default = () => /*#__PURE__*/_react.default.createElement(ConditionalFastRefreshOverlay, null, /*#__PURE__*/_react.default.createElement(_queryResultStore.StaticQueryStore, null, WrappedRoot));
 
 exports.default = _default;

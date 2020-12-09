@@ -3,6 +3,10 @@
     "develop": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -19,7 +23,10 @@
         {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -31,6 +38,10 @@
     "develop-html": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -47,7 +58,10 @@
         {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -59,6 +73,10 @@
     "build-html": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -75,7 +93,10 @@
         {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -87,6 +108,10 @@
     "build-javascript": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -103,7 +128,10 @@
         {
           "name": "/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],

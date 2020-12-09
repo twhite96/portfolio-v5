@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[],"trackingId":"UA-64753809-1"},
     },{
       plugin: require('/Volumes/Working Drive/root/dev/personal/projects/portfolio-v5/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Tiffany White Portfolio","short_name":"T.W. Portfolio","start_url":"/","background_color":"#fff","theme_color":"#02aab0","display":"standalone","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"0cac0af133a7d07297e550131fc0d456"},
+      options: {"plugins":[],"name":"Tiffany White Portfolio","short_name":"T.W. Portfolio","start_url":"/","background_color":"#fff","theme_color":"#02aab0","display":"standalone","icon":"src/images/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"0cac0af133a7d07297e550131fc0d456"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

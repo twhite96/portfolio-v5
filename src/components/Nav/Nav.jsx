@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Fade from "react-reveal/Fade";
+import { Link } from 'react-scroll';
 import { Container, Row, Col } from "react-bootstrap";
 
 
@@ -28,18 +29,18 @@ const Nav = () => {
             distance="30px"
           >
            <div>   
-            <a href="#hero" className="menu-text">
+            <Link to="hero" className="menu-text" smooth duration={1000}>
               <span className="menu-numbers">01.</span> Intro &nbsp;
-            </a>
-            <a href="#about" className="menu-text">
+            </Link>
+            <Link to="about" className="menu-text" smooth duration={1000}>
               <span className="menu-numbers">02.</span> About &nbsp;
-            </a>
-            <a href="#projects" className="menu-text">
+            </Link>
+            <Link to="projects" className="menu-text" smooth duration={1000}>
               <span className="menu-numbers">03.</span> Projects &nbsp;
-            </a>
-            <a href="#contact" className="menu-text">
+            </Link>
+            <Link to="contact" className="menu-text" smooth duration={1000}>
               <span className="menu-numbers">04.</span> Contact &nbsp;
-            </a>
+            </Link>
            </div>
           </Fade>
         </Col>
