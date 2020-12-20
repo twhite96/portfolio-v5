@@ -48,17 +48,17 @@ export const projectsData = [
     url: "https://bumped.com",
     repo: "", // if no repo, the button will not show up
   },
-  {
-    id: nanoid(),
-    img: "checkyoself-v1.png",
-    title: "Check Yo Self App, v1",
-    info: "A spelling and grammar checker for your markdown blog posts.",
-    info2:
-      "I built this app because at the time I started writing it, all the tools for checking the spelling and grammar on markdown documents got tripped up on the symbols. This is currently in v1, with the grammar checker and Firebase to be added later.",
-    url:
-      "https://docs.check-yoself.app/blog/2020/07/01/shipping-v1-with-or-without-grammar-checking",
-    repo: "https://github.com/twhite96/checkyoself", // if no repo, the button will not show up
-  },
+  // {
+  //   id: nanoid(),
+  //   img: "checkyoself-v1.png",
+  //   title: "Check Yo Self App, v1",
+  //   info: "A spelling and grammar checker for your markdown blog posts.",
+  //   info2:
+  //     "I built this app because at the time I started writing it, all the tools for checking the spelling and grammar on markdown documents got tripped up on the symbols. This is currently in v1, with the grammar checker and Firebase to be added later.",
+  //   url:
+  //     "https://docs.check-yoself.app/blog/2020/07/01/shipping-v1-with-or-without-grammar-checking",
+  //   repo: "https://github.com/twhite96/checkyoself", // if no repo, the button will not show up
+  // },
   // {
   //   id: nanoid(),
   //   img: 'kitty.jpeg',
