@@ -35,7 +35,7 @@ export const projectsData = [
     info: "A simple statc site generator built with Ruby",
     info2:
       "In order to show that I can create something from practically scratch, in a language I am not really familiar with with no outside help, I decided to build a static site generator.",
-    url: "https://twhite96.github.io/static-gen-ruby/",
+    url: "https://tiffanywhite.dev/2020/12/17/building-a-static-site-generator-with-ruby/",
     repo: "https://github.com/twhite96/static-gen-ruby", // if no repo, the button will not show up
   },
   {
