@@ -98,7 +98,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: "github",
-      url: "https://github.com/twhite96",
+      url: "https://github.com/twhite96/portfolio-v5",
     },
   ],
 };
