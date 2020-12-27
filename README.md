@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/twhite96/portfolio-v5">
-    <img src="https://res.cloudinary.com/twhiteblog/image/upload/v1600111898/trw-github.png" alt="Tiffany White portfolio" />
+    <img src="https://res.cloudinary.com/twhiteblog/image/upload/c_scale,q_100,w_333/v1600111898/trw-github.png" alt="Tiffany White portfolio" />
   </a>
 </div>
 <h1 align="center">www.tiffanyrwhite.com - v5</h1>
