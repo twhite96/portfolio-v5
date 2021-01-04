@@ -5,14 +5,14 @@
 </div>
 <h1 align="center">www.tiffanyrwhite.com - v5</h1>
 <p align="center">
-  The fifth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank">tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The fifth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank" rel="noopener noreferrer" >tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer" >Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" >Netlify</a>
 </p>
 <p align="center">
   Previous versions:
-  <a href="https://github.com/twhite96/v1" target="_blank">v1</a>,&nbsp;
-  <a href="https://github.com/twhite96/v2" target="_blank">v2</a>,&nbsp;
-  <a href="https://github.com/twhite96/v3" target="_blank">v3</a>,&nbsp;
-  <a href="https://github.com/twhite96/v4" target="_blank">v4</a>
+  <a href="https://github.com/twhite96/v1" target="_blank" rel="noopener noreferrer" >v1</a>,&nbsp;
+  <a href="https://github.com/twhite96/v2" target="_blank" rel="noopener noreferrer" >v2</a>,&nbsp;
+  <a href="https://github.com/twhite96/v3" target="_blank" rel="noopener noreferrer" >v3</a>,&nbsp;
+  <a href="https://github.com/twhite96/v4" target="_blank" rel="noopener noreferrer" >v4</a>
 </p>
 
 
@@ -51,7 +51,7 @@ At first I tried:
   } else {
     return <StyledNav />
   }
-  ```
+```
 
   where `isMobile` is an effect hook that was used in the theme.
 
