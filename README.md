@@ -5,14 +5,14 @@
 </div>
 <h1 align="center">www.tiffanyrwhite.com - v5</h1>
 <p align="center">
-  The fifth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank" rel="noreferrer" >tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer" >Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" >Netlify</a>
+  The fifth iteration of <a href="https://www.tiffanyrwhite.com">tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and hosted with <a href="https://www.netlify.com/">Netlify</a>
 </p>
 <p align="center">
   Previous versions:
-  <a href="https://github.com/twhite96/v1" rel="noreferrer" target="_blank">v1</a>,&nbsp;
-  <a href="https://github.com/twhite96/v2" rel="noreferrer" target="_blank">v2</a>,&nbsp;
-  <a href="https://github.com/twhite96/v3" rel="noreferrer" target="_blank">v3</a>,&nbsp;
-  <a href="https://github.com/twhite96/v4" rel="noreferrer" target="_blank">v4</a>
+  <a href="https://github.com/twhite96/v1">v1</a>,&nbsp;
+  <a href="https://github.com/twhite96/v2">v2</a>,&nbsp;
+  <a href="https://github.com/twhite96/v3">v3</a>,&nbsp;
+  <a href="https://github.com/twhite96/v4">v4</a>
 </p>
 
 <p align="center">
