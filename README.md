@@ -9,10 +9,10 @@
 </p>
 <p align="center">
   Previous versions:
-  <a href="https://github.com/twhite96/v1" target="_blank" rel="noopener noreferrer">v1</a>,&nbsp;
-  <a href="https://github.com/twhite96/v2" target="_blank" rel="noopener noreferrer">v2</a>,&nbsp;
-  <a href="https://github.com/twhite96/v3" target="_blank" rel="noopener noreferrer">v3</a>,&nbsp;
-  <a href="https://github.com/twhite96/v4" target="_blank" rel="noopener noreferrer">v4</a>
+  <a href="https://github.com/twhite96/v1" rel="noreferrer" target="_blank">v1</a>,&nbsp;
+  <a href="https://github.com/twhite96/v2" rel="noreferrer" target="_blank">v2</a>,&nbsp;
+  <a href="https://github.com/twhite96/v3" rel="noreferrer" target="_blank">v3</a>,&nbsp;
+  <a href="https://github.com/twhite96/v4" rel="noreferrer" target="_blank">v4</a>
 </p>
 
 <p align="center">
