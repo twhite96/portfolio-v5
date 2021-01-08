@@ -5,7 +5,7 @@
 </div>
 <h1 align="center">www.tiffanyrwhite.com - v5</h1>
 <p align="center">
-  The fifth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank" rel="noopener noreferrer" >tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer" >Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" >Netlify</a>
+  The fifth iteration of <a href="https://www.tiffanyrwhite.com" target="_blank" rel="noreferrer" >tiffanyrwhite.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer" >Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" >Netlify</a>
 </p>
 <p align="center">
   Previous versions:
