@@ -109,17 +109,6 @@ var plugins = [{
     "plugins": []
   }
 }, {
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-offline/gatsby-ssr */ "./node_modules/gatsby-plugin-offline/gatsby-ssr.js"),
-  options: {
-    "plugins": []
-  }
-}, {
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-gtag/gatsby-ssr */ "./node_modules/gatsby-plugin-gtag/gatsby-ssr.js"),
-  options: {
-    "plugins": [],
-    "trackingId": "UA-64753809-1"
-  }
-}, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
@@ -2721,74 +2710,6 @@ function parsePath(path) {
 
 /***/ }),
 
-/***/ "./node_modules/gatsby-plugin-gtag/gatsby-ssr.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/gatsby-plugin-gtag/gatsby-ssr.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(/*! react */ "react");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    default: obj
-  };
-}
-
-var GTAG_SRC = 'https://www.googletagmanager.com/gtag/js';
-
-exports.onRenderBody = function (_ref, pluginOptions) {
-  var setHeadComponents = _ref.setHeadComponents,
-      setPostBodyComponents = _ref.setPostBodyComponents;
-  var isPluginEnabled = stringToBool(({}).GATSBY_GTAG_DEBUG) || "development" === 'production';
-
-  if (!pluginOptions.trackingId || !isPluginEnabled) {
-    return null;
-  }
-
-  var anonymize = pluginOptions.anonymize || false;
-
-  var gtagScript = _react2.default.createElement('script', {
-    async: true,
-    key: 'gatsby-plugin-gtag-gtag-js',
-    src: GTAG_SRC + '?id=' + pluginOptions.trackingId
-  });
-
-  var scriptStr = '\n    window.GATSBY_GTAG_PLUGIN_GA_TRACKING_ID = (\n      \'' + pluginOptions.trackingId + '\'\n    );\n    window.GATSBY_GTAG_PLUGIN_ANONYMIZE = ' + anonymize + ';\n\n    var options = {\n      send_page_view: false\n    };\n    if (' + anonymize + ') {\n      options.anonymize_ip = true;\n    }\n\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    window.gtag = gtag;\n    gtag(\'js\', new Date());\n    gtag(\'config\', \'' + pluginOptions.trackingId + '\', options);\n  ';
-
-  var trackScript = _react2.default.createElement('script', {
-    key: 'gatsby-plugin-gtag-inline-script',
-    dangerouslySetInnerHTML: {
-      __html: scriptStr
-    }
-  });
-
-  var setComponents = pluginOptions.head ? setHeadComponents : setPostBodyComponents;
-  return setComponents([gtagScript, trackScript]);
-};
-
-function stringToBool(s) {
-  if (!s) {
-    return false;
-  }
-
-  var sNorm = s.trim().toLowerCase();
-
-  if (!sNorm.length) {
-    return false;
-  }
-
-  return sNorm === 'true' || sNorm === '1';
-}
-
-/***/ }),
-
 /***/ "./node_modules/gatsby-plugin-manifest/common.js":
 /*!*******************************************************!*\
   !*** ./node_modules/gatsby-plugin-manifest/common.js ***!
@@ -3023,59 +2944,6 @@ var _default = function _default(pathname, localizedManifests) {
 };
 
 exports.default = _default;
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-offline/gatsby-ssr.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/gatsby-plugin-offline/gatsby-ssr.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-exports.__esModule = true;
-exports.onRenderBody = exports.onPreRenderHTML = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-
-var onPreRenderHTML = function onPreRenderHTML(_ref) {
-  var getHeadComponents = _ref.getHeadComponents,
-      pathname = _ref.pathname,
-      replaceHeadComponents = _ref.replaceHeadComponents;
-  if (pathname !== "/offline-plugin-app-shell-fallback/") return;
-  var headComponents = getHeadComponents();
-  var filteredHeadComponents = headComponents.filter(function (_ref2) {
-    var type = _ref2.type,
-        props = _ref2.props;
-    return !(type === "link" && props.as === "fetch" && props.rel === "preload" && (props.href.startsWith("/static/d/") || props.href.startsWith("/page-data/")));
-  });
-  replaceHeadComponents(filteredHeadComponents);
-};
-
-exports.onPreRenderHTML = onPreRenderHTML;
-
-var onRenderBody = function onRenderBody(_ref3) {
-  var pathname = _ref3.pathname,
-      setHeadComponents = _ref3.setHeadComponents;
-
-  if (pathname !== "/offline-plugin-app-shell-fallback/") {
-    return;
-  }
-
-  setHeadComponents([/*#__PURE__*/_react.default.createElement("noscript", {
-    key: "disable-offline-shell"
-  }, /*#__PURE__*/_react.default.createElement("meta", {
-    httpEquiv: "refresh",
-    content: "0;url=/.gatsby-plugin-offline:api=disableOfflineShell&redirect=true"
-  }))]);
-};
-
-exports.onRenderBody = onRenderBody;
 
 /***/ }),
 
