@@ -70,6 +70,13 @@ const onRouteUpdate = (location, prevLocation) => {
       location,
       prevLocation
     });
+
+    if (process.env.GATSBY_EXPERIMENTAL_QUERY_ON_DEMAND && process.env.GATSBY_QUERY_ON_DEMAND_LOADING_INDICATOR === `true`) {
+      _emitter.default.emit(`onRouteUpdate`, {
+        location,
+        prevLocation
+      });
+    }
   }
 };
 

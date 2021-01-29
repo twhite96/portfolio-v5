@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import SEO from '../SEO/SEO'
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -22,6 +23,8 @@ const Header = () => {
   }, []);
 
   return (
+    <>
+    <SEO />
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
@@ -46,6 +49,7 @@ const Header = () => {
         </Fade>
       </Container>
     </section>
+    </>
   );
 };
 
