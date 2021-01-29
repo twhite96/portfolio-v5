@@ -21,6 +21,8 @@
             height: 100%;
             align-items: center;
             justify-content: center;
+            margin-top: -4em;
+            // margin-right: -4em;
             @include respond(tab-port) {
                 padding-bottom: 6.4rem;
             }
