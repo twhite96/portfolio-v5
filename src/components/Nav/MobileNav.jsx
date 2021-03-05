@@ -30,7 +30,7 @@ const StyledList = styled.ul`
 const MobileNav = ({ open }) => {
   return (
     <StyledList open={open}>
-      <Fade>
+      <Fade ssrFadeout>
         <li>
           <Link to="hero" className="menu-text" smooth duration={1000}>
             <span className="menu-numbers">01.</span> Intro &nbsp;

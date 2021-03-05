@@ -34,6 +34,7 @@ const Projects = () => {
               <Row key={id}>
                 <Col lg={4} sm={12}>
                   <Fade
+                    ssrFadeout
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}

@@ -22,6 +22,7 @@ const Nav = () => {
       <Row>
         <Col>
           <Fade
+            ssrFadeout
             left={isDesktop}
             bottom={isMobile}
             duration={1000}

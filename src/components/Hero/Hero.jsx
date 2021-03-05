@@ -3,11 +3,9 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-// import useHasMounted from '../../hooks/useHasMounted';
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, intro, cta } = hero;
-  // const hasMounted = useHasMounted();
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -38,7 +36,7 @@ const Header = () => {
             {intro}
           </h2>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade ssrFadeout left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
