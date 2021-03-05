@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import MobileNav from './MobileNav';
+import useHasMounted from '../../hooks/useHasMounted';
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -35,8 +36,23 @@ const StyledBurger = styled.div`
   }
 `;
 
+
 const Burger = () => {
   const [open, setOpen] = useState(false);
+  const hasMounted = useHasMounted();
+  // const [isMobile, setIsMobile] = useState(false);
+
+  // useEffect(() => {
+  //   if (window.innerWidth < 769) {
+  //     setIsMobile(true);
+  //   } else {
+  //     return null;
+  //   }
+  // }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
   return (
   <>
     <StyledBurger open={open} onClick={() => setOpen(!open)}>
