@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from 'react-scroll';
 import { Container, Row, Col } from "react-bootstrap";
+import useHasMounted from '../../hooks/useHasMounted';
 
 
 const Nav = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const hasMounted = useHasMounted();
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -16,6 +18,10 @@ const Nav = () => {
       setIsDesktop(false);
     }
   }, []);
+  
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <Container id="navbar" className="navbar">
