@@ -5,6 +5,7 @@ import Title from "../Title/Title";
 import AboutImg from "../Image/AboutImg";
 import resumeDownload from "../../downloads/resume.pdf";
 import PortfolioContext from "../../context/context";
+import useHasMounted from '../../hooks/useHasMounted';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -12,6 +13,7 @@ const About = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const hasMounted = useHasMounted();
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -23,6 +25,9 @@ const About = () => {
     }
   }, []);
 
+  if (!hasMounted) {
+    return null;
+  }
   return (
     <section id="about">
       <Container>

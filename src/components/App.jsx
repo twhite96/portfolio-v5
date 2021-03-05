@@ -7,6 +7,7 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import Burger from './Nav/Burger';
+import useIsClient from '../hooks/useIsClient';
 
 import { PortfolioProvider } from "../context/context";
 
@@ -18,24 +19,31 @@ import {
   footerData,
 } from "../mock/data";
 
+
+
 // setDefaultBreakpoints([
-//   { medium: 375 }
-// ]);
-function App() {
-  const [hero, setHero] = useState({});
-  const [about, setAbout] = useState({});
-  const [projects, setProjects] = useState([]);
-  const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
+  //   { medium: 375 }
+  // ]);
+  function App() {
+    const [hero, setHero] = useState({});
+    const [about, setAbout] = useState({});
+    const [projects, setProjects] = useState([]);
+    const [contact, setContact] = useState({});
+    const [footer, setFooter] = useState({});
+    const isClient = useIsClient();
 
   useEffect(() => {
-    setHero({ ...heroData });
+    setTimeout(() => setHero({ ...heroData }), 0)
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
+  
 
+  if (!isClient) {
+    return null;
+  }
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
     <BreakpointProvider>
