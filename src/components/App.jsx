@@ -7,7 +7,6 @@ import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
 import Burger from './Nav/Burger';
-import useIsClient from '../hooks/useIsClient';
 
 import { PortfolioProvider } from "../context/context";
 
@@ -30,7 +29,6 @@ import {
     const [projects, setProjects] = useState([]);
     const [contact, setContact] = useState({});
     const [footer, setFooter] = useState({});
-    const isClient = useIsClient();
 
   useEffect(() => {
     setTimeout(() => setHero({ ...heroData }), 0)
@@ -40,10 +38,6 @@ import {
     setFooter({ ...footerData });
   }, []);
   
-
-  if (!isClient) {
-    return null;
-  }
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
     <BreakpointProvider>
