@@ -8,7 +8,6 @@ const Header = () => {
   const { title, name, subtitle, intro, cta } = hero;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const hasMounted = useHasMounted();
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
