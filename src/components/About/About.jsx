@@ -42,6 +42,7 @@ const About = () => {
           </Col>
           <Col md={6} sm={12}>
             <Fade
+              ssrFadeout
               left={isDesktop}
               bottom={isMobile}
               duration={1000}
