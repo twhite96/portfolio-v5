@@ -26,6 +26,9 @@
             @include respond(tab-port) {
                 padding-bottom: 6.4rem;
             }
+            @include respond(phone) {
+                padding-top: 4.5rem;
+            }
             @include respond(tab-land) {
                 height: 100%;
             }

@@ -41,10 +41,10 @@ import {
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
     <BreakpointProvider>
-      <Breakpoint large up>       
+      <Breakpoint medium up>       
         <Nav />
       </Breakpoint>
-      <Breakpoint medium down>
+      <Breakpoint small down>
         <Burger />
       </Breakpoint>
     </BreakpointProvider>
