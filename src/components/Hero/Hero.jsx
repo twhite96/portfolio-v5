@@ -3,11 +3,13 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import useHasMounted from '../../hooks/useHasMounted';
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, intro, cta } = hero;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const hasMounted = useHasMounted();
   useEffect(() => {
     if (window.innerWidth > 769) {
       setIsDesktop(true);
@@ -18,9 +20,9 @@ const Header = () => {
     }
   }, []);
 
-  // if (!hasMounted) {
-  //   return null;
-  // }
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <section id="hero" className="jumbotron">
